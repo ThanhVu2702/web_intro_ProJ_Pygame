@@ -15,54 +15,41 @@
 <body onload="showSlides()">
     <nav class="nav-bar">
         <ul class="menu">
-            <li class="menu-item"><a href="index.html" style="color: #2479c9;">Home</a></li>
+            <li class="menu-item"><a href="index.html" style="color: #66fcf1;">Home</a></li>
             <li class="menu-item"><a href="Instruction.html">Instruction</a></li>
             <li class="menu-item"><a href="download.html">Download</a></li>
-            <li class="menu-item"><a href="Detailsus.html">Infor Dev</a></li>
+            <li class="menu-item"><a href="Detailsus.html">Infor dev</a></li>
         </ul>
         <div class="ribbon"></div>
     </nav>
-    <div class="content">        
-        <div class="left">
-            <div class="disc">
-                <div class="center">
-                    <img src="Web_Intro_ProJ/image/tank1 up.png">
-                </div>
-            </div>
-            <div class="parent">
-                <div class="child-level-1">
-                  <div class="child child-1"></div>
-                  <div class="child child-2"></div>
-                </div>
-            </div>
-        </div>       
-        <div class="right">
-            <div class="title"><h1>Welcome to Combat Tank- Welcome to battlefield</h1></div>
+    <div class="content" >            
+        <div style="margin: 0 auto;width: 50%; color: white;">
+            <div class="title" style="margin-top: 50pt;"><h1>Welcome to Combat Tank PVP</h1></div>
             <div class="slideshow-container">
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                   <div class="numbertext">1 / 4</div>
-                  <img src="tankbg1.jpg" style="width:100%">
-                  <div class="text">Enjoy real battlefield on your PC</div>
+                  <img src="./assets/tankbkg1.png" style="width:100%">
+                  <div class="text">Battle tank PVP on PC</div>
                 </div>
               
                 <div class="mySlides fade">
                   <div class="numbertext">2 / 4</div>
-                  <img src="tankbg2.jpg" style="width:100%">
-                  <div class="text">You can play with AI</div>
+                  <img src="./assets/tankbkg2.png" style="width:100%">
+                  <div class="text">PVP mode</div>
                 </div>
               
                 <div class="mySlides fade">
                   <div class="numbertext">3 / 4</div>
-                  <img src="tankbg3.jpg" style="width:100%">
-                  <div class="text">You can combat with your friend</div>
+                  <img src="assets/tankbkg3.png" style="width:100%">
+                  <div class="text">Survival mode</div>
                 </div>
 
                 <div class="mySlides fade">
                   <div class="numbertext">4 / 4</div>
-                  <img src="tankbg4.jpg" style="width:100%">
-                  <div class="text">Survival mode is available</div>
+                  <img src="assets/tankbkg4.png" style="width:100%">
+                  <div class="text">Play with your friends</div>
                 </div>
               
                 <!-- Next and previous buttons -->
@@ -78,30 +65,36 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
               </div>
-            </div>        
+            </div>      
+    <div style="padding-bottom: 50px;">
+      <p style="text-align: justify; margin: 0 auto; width: 50%; color: white; padding-top: 20px;">Trong thế giới hỗn loạn và đầy cạnh tranh này, chào mừng bạn đến với đấu trường PvP hoành tráng, nơi kỹ năng, chiến lược và lòng dũng cảm sẽ được thử thách đến cùng cực. Hãy sẵn sàng đọ sức với những đối thủ ngang tài ngang sức, chứng minh bản lĩnh và vươn lên dẫn đầu </p>
+      <button id="downloadButton">Download now</button>
+      <script>
+        document.getElementById("downloadButton").addEventListener("click", function() {
+            window.location.href = "download.html";
+        });
+    </script>
+    </div>  
+            
     </div>
-    <footer class="footer">
+    
+    <footer class="footer" style="margin-top: 50px;">
         <div class="ribbon1"></div>
         <div class="part1">
-            <p>Name: Thiên Phúc </p>
-            <p>Phone Number: 0867850056</p>
-            <p>Contact and Follow: </p><a href="https://www.youtube.com/channel/UCP7m9fLrzvcDfcaZi9htj4g">Youtube Chanel</a>
+            <p>Name: Nguyễn Thanh Vũ </p>
+            <p>Phone Number: N/A</p>
+            <p>Contact and Follow: </p><a href="#">Facebook</a>
         </div>
         <div class="part2">
-            <p>Name: Chí Bảo</p>
+            <p>Name: Đặng Huỳnh Như Y</p>
             <p>Phone Number: N/A</p>
-            <p>Contact and Follow: </p><a href="https://www.facebook.com/dcbaosgu">Facebook</a>
-        </div>
+            <p>Contact and Follow: </p><a href="#">Facebook</a>        </div>
         <div class="part3">
-          <p>Name: Đức Anh </p>
+          <p>Name: Nguyễn Thanh Quang </p>
           <p>Phone Number: N/A</p>
-          <p>Contact and Follow: </p><a href="https://www.facebook.com/ducanhdeptraivip">Facebook</a>
-        </div>
-        <div class="part4">
-          <p>Name: Tuấn Anh </p>
-          <p>Phone Number: N/A</p>
-          <p>Contact and Follow: </p><a href="#">N/A</a>
-        </div>
+          <p>Contact and Follow: </p><a href="#">Facebook</a>        </div>
+        
     </footer>
+    
 </body>
 </html>

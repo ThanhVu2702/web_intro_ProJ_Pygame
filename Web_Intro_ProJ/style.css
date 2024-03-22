@@ -2,14 +2,16 @@
 {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    font-family: "Quicksand", Arial, sans-serif;}
 @media only screen and (min-width: 1600px){ 
+
+    p {
+        margin-bottom: 1.5em; }
     .nav-bar
     {
         position: sticky;
         top:0;
-        background-color: #252527;
+        background-color: #c5c6c7;
         width: 100%;
         height: 80px;
     }
@@ -34,11 +36,11 @@
     .nav-bar .menu .menu-item
     {        
         display: inline-block;
-        border-right: 1px #504f4f solid;
+        border-right: 1px #c5c6c7 solid;
     }
     .nav-bar .menu .menu-item:hover
     {
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: #c5c6c7;
     }
     .nav-bar .menu .menu-item a
     {
@@ -65,9 +67,10 @@
     
     .content .right
     { 
-        width: 60%;
+        width: 50%;
         float:left;
-        color: white
+        color: white;
+        margin: 0 auto;
     }
     .content .right .title
     {
@@ -169,7 +172,7 @@
         top: 90%;
         width: 100%;
         height: 10%;
-        background-color: #2479c9;
+        background-color: #66fcf1;
     }
     .nav-bar .menu
     {
@@ -184,16 +187,141 @@
     .nav-bar .menu .menu-item
     {        
         display: inline-block;
-        border-right: 1px #504f4f solid;
+        
     }
     .nav-bar .menu .menu-item:hover
     {
-        background-color: rgba(255, 255, 255, 0.3);
-    }
+        
+            background-color: transparent;
+        
+            color: #66fcf1;
+            transform: translateY(-7px);
+          }
+          
+          .menu-item:active {
+            transform: translateY(-1px);
+          }
+
+
+    
+    
+          .menu-item {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 18px;
+            color: #66fcf1;
+            font-family: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+          }
+          
+          .menu-item:focus,
+          button:hover {
+            color: #66fcf1;
+          }
+          
+          .menu-item:focus:after,
+          .menu-item:hover:after {
+            width: 100%;
+            left: 0%;
+          }
+          
+          .menu-item:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #66fcf1;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+          }
+
+
+
+
+          button {
+            margin-top: 10px;
+            display: block; /* Đảm bảo button chiếm toàn bộ chiều ngang của phần tử cha */
+    margin: 0 auto;
+            --border-radius: 15px;
+            --border-width: 4px;
+            appearance: none;
+            position: relative;
+            padding: 1em 2em;
+            border: 0;
+            background-color: #212121;
+            font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            z-index: 2;
+           }
+           
+           button::after {
+            --m-i: linear-gradient(#000, #000);
+            --m-o: content-box, padding-box;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            padding: var(--border-width);
+            border-radius: var(--border-radius);
+            background-image: conic-gradient(
+                   #488cfb,
+                   #29dbbc,
+                   #ddf505,
+                   #ff9f0e,
+                   #e440bb,
+                   #655adc,
+                   #488cfb
+               );
+            -webkit-mask-image: var(--m-i), var(--m-i);
+            mask-image: var(--m-i), var(--m-i);
+            -webkit-mask-origin: var(--m-o);
+            mask-origin: var(--m-o);
+            -webkit-mask-clip: var(--m-o);
+            mask-composite: exclude;
+            -webkit-mask-composite: destination-out;
+            filter: hue-rotate(0);
+            animation: rotate-hue linear 500ms infinite;
+            animation-play-state: paused;
+           }
+           
+           button:hover::after {
+            animation-play-state: running;
+           }
+           
+           @keyframes rotate-hue {
+            to {
+             filter: hue-rotate(1turn);
+            }
+           }
+           
+           button,
+           button::after {
+            box-sizing: border-box;
+           }
+           
+           button:active {
+            --border-width: 5px;
+           }
     .nav-bar .menu .menu-item a
     {
         text-decoration: none;
-        color: #7d7e80;
+        color: #c5c6c7;
         text-align: center;
         display: block;
         padding: 14px 16px;
@@ -204,7 +332,7 @@
         position: absolute;
         background-color: #1e1e1e;
         width: 100%;
-        height: 800px;
+        height: 1200px;
     }
     .content .left
     {
@@ -226,7 +354,7 @@
     .footer
     {
         position: absolute;
-        top: 800px;
+        top: 1100px;
         background-color: #252527;
         width: 100%;
         height: 200px;
@@ -236,7 +364,7 @@
     .footer a
     {
         text-decoration: none;
-        color: #2479c9;
+        color: #66fcf1;
     }
 
     .footer .ribbon1
@@ -245,7 +373,7 @@
         top: 0;
         width: 100%;
         height: 5%;
-        background-color: #2479c9;
+        background-color: #66fcf1;
     }
 
     .footer .part1
@@ -253,7 +381,7 @@
         position: absolute;
         top: 5%;
         left: 0;
-        width: 25%;
+        width: 33%;
         height: 95%;
         float: left;
         padding: 3%;
@@ -264,8 +392,8 @@
     {
         position: absolute;
         top: 5%;
-        left: 25%;
-        width: 25%;
+        left: 33%;
+        width: 33%;
         height: 95%;
         float: left;
         padding: 3%;
@@ -276,8 +404,8 @@
     {
         position: absolute;
         top: 5%;
-        left: 50%;
-        width: 25%;
+        left: 66%;
+        width: 34%;
         height: 95%;
         float: left;
         padding: 3%;
@@ -496,7 +624,7 @@
     .content .left
     {
         position: absolute;
-        height: 600px;
+        height: 800px;
         width: 100%;
     }
         
@@ -517,7 +645,7 @@
     .footer
     {
         position: absolute;
-        top: 1100px;
+        top: 1200px;
         background-color: #252527;
         width: 100%;
         height: 250px;

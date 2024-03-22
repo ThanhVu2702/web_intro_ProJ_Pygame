@@ -2,7 +2,8 @@
 {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Quicksand", Arial, sans-serif;
+
 }
 @media only screen and (min-width: 1600px) { 
     .nav-bar
@@ -183,7 +184,7 @@
         top: 90%;
         width: 100%;
         height: 10%;
-        background-color: #2479c9;
+        background-color: #66fcf1;
     }
     .nav-bar .menu
     {
@@ -198,16 +199,67 @@
     .nav-bar .menu .menu-item
     {        
         display: inline-block;
-        border-right: 1px #504f4f solid;
     }
-    .nav-bar .menu .menu-item:hover
+   .nav-bar .menu .menu-item:hover
     {
-        background-color: rgba(255, 255, 255, 0.3);
-    }
+        
+            background-color: transparent;
+            color: #66fcf1;
+            transform: translateY(-7px);
+          }
+          
+          .menu-item:active {
+            transform: translateY(-1px);
+          }
+
+
+    
+    
+          .menu-item {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 18px;
+            color: #66fcf1;
+            font-family: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+          }
+          
+          .menu-item:focus,
+          button:hover {
+            color: #66fcf1;
+          }
+          
+          .menu-item:focus:after,
+          .menu-item:hover:after {
+            width: 100%;
+            left: 0%;
+          }
+          
+          .menu-item:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #66fcf1;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+          }
     .nav-bar .menu .menu-item a
     {
         text-decoration: none;
-        color: #7d7e80;
+        color: #c5c6c7;
         text-align: center;
         display: block;
         padding: 14px 16px;
