@@ -142,11 +142,8 @@
         font-family: 'Poppins',sans-serif;
     }
     .cards{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-        padding: 20px;
-        grid-gap: 40px;
-        animation: fadeIn 5s;
+        display: flex;
+      width: 80%;
     }
     @keyframes fadeIn {
         0% { opacity: 0; }
@@ -250,10 +247,14 @@
         font-size: larger;
     }
     .card{
-        background-color: #1c1b29;
+        background-color: #494674;
         border-radius: 20px;
         box-shadow: 5px 10px 8px #504f4f;
+        margin: 20px;
     }
+    /* .card:hover {
+        background-color: #494674;
+    } */
     .container{
         position: relative;
         clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
