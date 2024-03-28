@@ -45,12 +45,13 @@
   
   /* Caption text */
   .text {
-    color: white;
-    font-size: 30px;
+    color: rgb(246, 242, 242);
+    font-size: 45px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 55%;
+    bottom: 2%;
     width: 100%;
+    margin: 0 auto;
     text-align: center;
   }
   
@@ -138,12 +139,13 @@
   
   /* Caption text */
   .text {
-    color: white;
-    font-size: 30px;
+    color: rgb(13, 1, 1);
+    font-size: 35px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 55%;
+    bottom: 2%;
     width: 100%;
+    margin: 0 auto;
     text-align: center;
   }
   
@@ -192,9 +194,10 @@
   .slideshow-container {
     max-width: 500px;
     position: relative;
-    margin: auto;
+    margin: center;
     margin-top: 3%;
-    margin-left: 1%;
+    margin-left: 10%;
+    margin-right: 50%;
   }
   
   /* Hide the images by default */
@@ -231,12 +234,13 @@
   
   /* Caption text */
   .text {
-    color: white;
-    font-size: 30px;
+    color: rgb(7, 0, 0);
+    font-size: 35px;
     padding: 8px 12px;
     position: absolute;
     bottom: 5%;
     width: 100%;
+    margin: 0 auto;
     text-align: center;
   }
   
@@ -285,9 +289,10 @@
   .slideshow-container {
     max-width: 500px;
     position: relative;
-    margin: auto;
+    margin: center;
     margin-top: 3%;
-    margin-left: 1%;
+    margin-left: 10%;
+    margin-right: 50%;
   }
   
   /* Hide the images by default */
@@ -324,12 +329,13 @@
   
   /* Caption text */
   .text {
-    color: white;
-    font-size: 30px;
+    color: rgb(13, 1, 1);
+    font-size: 25px;
     padding: 8px 12px;
     position: absolute;
     bottom: 5%;
     width: 100%;
+    margin: 0 auto;
     text-align: center;
   }
   
