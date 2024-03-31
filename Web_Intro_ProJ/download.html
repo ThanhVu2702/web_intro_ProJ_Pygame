@@ -24,6 +24,7 @@
               .name h2 {
                 font-size: 2em;
                 color: rgb(139, 184, 221);
+                margin-top: -20px;
               }
             </style>
           </head>
@@ -33,32 +34,38 @@
           
         <div class="download-content">
             <div class="left">
-                <div class="logo"><img style="width: 280px;" src="./image/icon.jpg"></div>
-                <div class="info">
+                <div class="logo">
+                    <img style="margin: 20px auto 0 auto; width: 340px; height: 200px;" src="./image/bginstall.jpg">
+                  </div>
+                
+                  <div class="info" style="margin-top: 220px; color: rgb(206, 221, 151)">
                     <p>Version: 1.0.0</p>
                     <p>Release day: 01/04/2024</p>
-                    <p>Size: 8Mb</p>
-                </div>
+                    <p>Size: 8 MB</p>
+                  </div>
+                  
             </div>
             <div class="right">
                 <div class="title"><h2 style="text-align: center;">Download for Linux</h2></div>                
                 <div class="download">
-                    <div class="minimum-requirement">
-                        <h3>Minimum Requirement</h3>
+                    <div class="minimum-requirement" style="margin-top: -20px;">
+                        <h3 style="color: rgb(207, 123, 21);">Minimum Requirement</h3>
                         <p>CPU: Any</p>
                         <p>Ram: 0.5 GB</p>
-                        <p>Space: 15Mb</p>
+                        <p>Space: 15 MB</p>
                         <p>OS: Ubuntu 20.4</p>
-                    </div>
-                    <div class="recommend-requirement">
-                        <h3>Recommend Requirement</h3>
+                      </div>
+                      
+                    <div class="recommend-requirement" style="margin-top: 5px;">
+                        <h3 style="color: rgb(207, 123, 21);">Recommend Requirement</h3>
                         <p>CPU: Any</p>
                         <p>Ram: 1 GB</p>
-                        <p>Space: 18Mb</p>
+                        <p>Space: 18 MB</p>
                         <p>OS: Lastest Version</p>
                     </div>
                 </div>
-                <button id="downloadButton">Download now</button>
+                <button id="downloadButton" style="margin-left: 230px;">DOWNLOAD NOW</button>
+
       <script>
         document.getElementById("downloadButton").addEventListener("click", function() {
             window.location.href = "https://github.com/ThanhVu2702/Project_Pygame_Nhom18/archive/refs/heads/main.zip";
